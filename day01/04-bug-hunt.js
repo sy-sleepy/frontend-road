@@ -16,19 +16,19 @@ console.log("🐛 猎虫行动开始 —— 按注释指引，一次解锁一个
 
 // ════════ Bug 1： ReferenceError ════════
 // 取消下面 3 行注释，运行，读懂报错后修复它
-// const password = "123456";
-// console.log(`我的密码是 ${passwrod}`);
+const password = "123456";
+console.log(`我的密码是 ${password}`);
 
 // ════════ Bug 2： TypeError ════════
 // Bug 1 修好后，取消下面 3 行注释再来
-// const age = 20;
-// const message = age.toUpperCase();
-// console.log(message);
+const age = "20";
+const message = age.toUpperCase();
+console.log(message)
 
 // ════════ Bug 3： TypeError (Assignment) ════════
 // 最后一个，取消下面 3 行注释
-// const goal = "进大厂";
-// goal = "进字节";
-// console.log(goal);
+let goal = "进大厂";
+goal = "进字节";
+console.log(goal);
 
 console.log("三个虫子都抓完了？去 notes/bugs.md 记录战果，然后开始今天的算法题！");

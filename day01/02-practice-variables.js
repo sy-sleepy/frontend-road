@@ -8,24 +8,24 @@
 
 // ─────────── TODO 1 ───────────
 // 用 const 声明变量 myName，值为你的名字
-const myName = null; // ← 把 null 改成你的名字
+const myName = "e直睡"; // ← 把 null 改成你的名字
 
 // ─────────── TODO 2 ───────────
 // 用 const 声明 myCity，值为你所在的城市
-const myCity = null;
+const myCity = "天津";
 
 // ─────────── TODO 3 ───────────
 // 用 let 声明 solvedCount，值为 0（表示已解决的算法题数）
-let solvedCount = null;
+let solvedCount = 0;
 
 // ─────────── TODO 4 ───────────
 // 把 solvedCount 重新赋值为 1（今天就要拿下两数之和！）
 // 在这里写一行代码：
-
+solvedCount = 1;
 // ─────────── TODO 5 ───────────
 // 用模板字符串（反引号 + ${}）拼出这句话：
 // "我是 xxx，来自 xxx，今天已解决 1 道算法题"
-const intro = null; // ← 把 null 换成你的模板字符串
+const intro = `我是 ${myName}, 来自 ${myCity}, 今天解决了 ${solvedCount}道算法题` // ← 把 null 换成你的模板字符串
 
 console.log(intro);
 

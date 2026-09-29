@@ -21,9 +21,16 @@
 // 提示：console.log(`╔════...`) 多行打印即可，不用追求边框对齐完美
 
 // 你的代码写在这里：
-
-
-
+const name = "e直睡";
+const school = "天津仁爱学院";
+const targetCompany = "字节";
+const targetRole = "前端";
+console.log (`  ╔══════════════════════════════╗ `)
+console.log (`  ║  姓名: ${name}                   ║` )
+console.log (`  ║  学校: ${school}                   ║` )
+console.log (`  ║  目标:${targetCompany} . ${targetRole}║ `)
+console.log (`   ║  开始日期:2026-09-07          ║` )
+console.log (` ╚══════════════════════════════╝`)
 // ─────────── 任务 B：倒计时计算器 ───────────
 // JS 内置的 Date 对象可以做日期运算。下面这行代码拿到"现在"：
 const now = new Date();
@@ -34,7 +41,7 @@ const investDay = new Date("2026-11-15");
 // 提示 1：两个 Date 相减会得到毫秒数：investDay - now
 // 提示 2：一天有 1000 * 60 * 60 * 24 毫秒，用除法换算成天数
 // 提示 3：小数很难看，用 Math.round(...) 取整
-const daysLeft = null; // ← 把 null 换成你的计算表达式
+const daysLeft = Math.round((investDay-now)/(1000 * 60 * 60 * 24));// ← 把 null 换成你的计算表达式
 
 console.log(`\n⏰ 距离第一批实习投递（2026-11-15）还有：${daysLeft} 天`);
 console.log(`   按每周 18 小时算，你还有 ${Math.round(daysLeft / 7 * 18)} 小时可支配 —— 够了，但一天都不能浪费。`);
