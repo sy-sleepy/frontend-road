@@ -16,22 +16,22 @@ console.log("🐛 猎虫行动 Day 2 开始 —— 一次解锁一个 bug\n");
 
 // ════════ Bug 1：字符串拼接的坑（结果不是你要的数字） ════════
 // 期望输出 30，但下面这行会输出别的东西。取消注释跑一下看结果，然后修好它。
-// const myAge = "20";
-// const ten = 10;
-// console.log("10 年后的年龄：", myAge + ten);   // ← 结果会是 "2010"，为什么？
+ const myAge = 20;
+ const ten = 10;
+ console.log("10 年后的年龄：", myAge + ten);   // ← 结果会是 "2010"，为什么？
 
 // ════════ Bug 2：NaN 悄悄出现 ════════
 // 期望输出 15，但会得到 NaN。取消注释跑一下，读懂后修复。
-// const a = Number("abc");   // "abc" 转不成数字，变成 NaN
-// const b = 15;
-// console.log("计算结果：", a + b);   // ← NaN + 15 = NaN
+const a = 0 ;   // "abc" 转不成数字，变成 NaN
+const b = 15;
+console.log("计算结果：", a + b);   // ← NaN + 15 = NaN
 
 // ════════ Bug 3：用 == 埋下的雷 ════════
 // 这个 if 判断会"意外地"成立。取消注释跑一下，看它打印了什么，然后改用 === 修好。
-// const userAge = 0;
-// if (userAge == false) {
-//   console.log("bug！0 竟然被当成了 false");
-// }
-// console.log("改成 === 试试，0 === false 才是安全的比较");
+const userAge = 0;
+if (userAge === false) {
+  console.log("bug！0 竟然被当成了 false");
+}
+console.log("改成 === 试试，0 === false 才是安全的比较");
 
 console.log("三个虫子都抓完了？去 notes/bugs.md 记录战果，然后开始今天的算法题！");

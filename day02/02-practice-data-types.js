@@ -8,27 +8,25 @@
 
 // ─────────── TODO 1 ───────────
 // 用 typeof 判断：字符串 "15" 是什么类型？把答案（字符串）赋值给 type1
-const type1 = null; // ← 把 null 改成 typeof 判断的结果
-
+const type1 = typeof "15";
 // ─────────── TODO 2 ───────────
 // 把字符串 "15" 转成数字，存进 numFromStr
-const numFromStr = null; // ← 用 Number() 转换
-
+const numFromStr = Number("15");
 // ─────────── TODO 3 ───────────
 // 计算 1 + 2 + 3 的总和（结果是数字 6），存进 total
-const total = null; // ← 算出 1+2+3 的和
+const total = 1 + 2 + 3; // ← 算出 1+2+3 的和
 
 // ─────────── TODO 4 ───────────
 // 用 String() 把数字 42 转成字符串，存进 strFromNum
-const strFromNum = null; // ← 用 String() 转换
+const strFromNum = String(42); // ← 用 String() 转换
 
 // ─────────── TODO 5 ───────────
 // 用 === 判断：数字 5 和字符串 "5" 严格相等吗？存进 isStrictEqual（应该是 false）
-const isStrictEqual = null; // ← 用 === 判断
+const isStrictEqual = 5 === "5"; // ← 用 === 判断
 
 // ─────────── TODO 6 ───────────
 // 用 Boolean() 判断空字符串 "" 是"真"还是"假"？存进 isEmptyTruthy
-const isEmptyTruthy = null; // ← 用 Boolean() 判断
+const isEmptyTruthy = Boolean(""); // ← 用 Boolean() 判断
 
 // ═══════════════ 自检区（不要改下面的代码） ═══════════════
 console.log("\n────────── 自检 ──────────");

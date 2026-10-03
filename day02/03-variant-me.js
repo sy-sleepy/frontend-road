@@ -19,7 +19,7 @@ const doneStr = "12.5";       // 已经投入 12.5 小时
 // 提示 1：Number(totalStr) 和 Number(doneStr)
 // 提示 2：百分比 = 已完成 / 总量 * 100
 // 提示 3：用 Math.round() 取整
-const percent = null; // ← 把 null 换成你的计算表达式
+const percent = Math.round(Number(doneStr) / Number(totalStr) * 100); // ← 把 null 换成你的计算表达式
 
 console.log(`本周学习进度：${percent}%`);
 
@@ -33,11 +33,11 @@ const c = true;
 const d = [1, 2, 3];          // 数组（后面课会细讲，现在先知道 typeof 它是什么）
 const e = { key: "value" };   // 对象
 
-const typeA = null;   // ← 填空
-const typeB = null;   // ← 填空
-const typeC = null;   // ← 填空
-const typeD = null;   // ← 填空（提示：数组的 typeof 会出乎你意料）
-const typeE = null;   // ← 填空
+const typeA = typeof a;   // ← 填空
+const typeB = typeof b;   // ← 填空
+const typeC = typeof c;   // ← 填空
+const typeD = typeof d;   // ← 填空（提示：数组的 typeof 会出乎你意料）
+const typeE = typeof e;   // ← 填空
 
 console.log(`类型侦探：a=${typeA}, b=${typeB}, c=${typeC}, d=${typeD}, e=${typeE}`);
 
