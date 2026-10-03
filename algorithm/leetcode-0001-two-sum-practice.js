@@ -24,9 +24,15 @@ var twoSum = function (nums, target) {
   // 3. 表里有另一半就返回；没有就把"自己 → 下标"记进表
 
   // 在这里写你的代码
-
+  const seen = new Map();
+  for (let i = 0; i< nums.length; i++) {
+  const x = nums[i];
+  const partner = target-x;
+  if(seen.has(partner)) {
+    return [seen.get(partner),i]}
+    seen.set(x,i);
+}
 };
-
 // ═══════════════ 测试区（不要改，跑起来看结果） ═══════════════
 const cases = [
   { nums: [2, 7, 11, 15], target: 9, expect: [0, 1] },
